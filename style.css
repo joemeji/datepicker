@@ -1,0 +1,88 @@
+
+#datepicker {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#datepicker:focus-within .calendar-dropdown {
+  display: block;
+}
+
+.calendar-dropdown {
+  position: absolute;
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px 12px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px #00000012;
+  width: 306px;
+}
+
+.days-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.days-list thead th, 
+.days-list tbody td {
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 10px;
+  line-height: 1;
+}
+
+.days-list thead th {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.days-list tbody td.faded,
+.days-list thead th {
+  color: #c2c3c6;
+}
+
+.days-list tbody td:hover {
+  background: #4b91fb;
+  transition: 200ms background;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #cbd4ea30;
+  margin-bottom: 10px;
+}
+
+.navigator {
+  border: 0;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 0;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 4px #0000001f;
+  border-radius: 7px;
+  color: #666864;
+  cursor: pointer;
+}
+
+.navigator:hover {
+  background: #4b91fb;
+  color: #fff;
+}
+
+.month-select, 
+.year-select {
+  font-size: 1em;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+}
